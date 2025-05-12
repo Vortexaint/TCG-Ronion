@@ -11,3 +11,6 @@ public class TcgApplication {
 	}
 
 }
+
+
+// Landing page, ui, user, admin, api, backend.
