@@ -1,82 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TCG Card Trade</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="landing.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCG Marketplace</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">TCG Card Trade</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">TCGMarket</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
+      <button class="cta-button">Login</button>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero text-white text-center d-flex align-items-center justify-content-center">
-    <div>
-      <h1 class="display-4 fw-bold">Buy. Sell. Trade. Collect.</h1>
-      <p class="lead">Your trusted TCG marketplace for Pokémon, Magic, and Yu-Gi-Oh!</p>
-      <a href="#" class="btn btn-primary btn-lg">Browse Cards</a>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Buy, Sell & Collect Your Favorite Trading Cards</h2>
+      <p>Join the largest marketplace for trading card games. Find rare cards, build your decks, and connect with the community.</p>
+      <button class="cta-button large">Start Exploring</button>
     </div>
   </section>
 
-  <!-- Featured Cards -->
-  <section class="container py-5">
-    <h2 class="text-center mb-4">Featured Cards</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://images.pokemontcg.io/base1/4.png" class="card-img-top" alt="Charizard">
-          <div class="card-body text-center">
-            <h5 class="card-title">Charizard - Base Set</h5>
-            <p class="card-text">$249.99</p>
-            <a href="#" class="btn btn-outline-primary">View</a>
-          </div>
+  <section class="features" id="shop">
+    <div class="container">
+      <h3>Top Categories</h3>
+      <div class="feature-grid">
+        <div class="card">
+          <img src="/textures/Pokemon-back.jpg"
+          alt="Pokemon TCG" onerror="this.onerror=null;this.src='https://via.placeholder.com/250x350?text=Image+Not+Found';">
+          <h4>Pokémon</h4>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://images.ygoprodeck.com/images/cards/89631139.jpg" class="card-img-top" alt="Blue-Eyes White Dragon">
-          <div class="card-body text-center">
-            <h5 class="card-title">Blue-Eyes White Dragon</h5>
-            <p class="card-text">$59.99</p>
-            <a href="#" class="btn btn-outline-primary">View</a>
-          </div>
+        <div class="card">
+          <img src="/textures/Yu-Gi-Oh-back.png"
+          alt="Yu-Gi-Oh! TCG" onerror="this.onerror=null;this.src='https://via.placeholder.com/250x350?text=Image+Not+Found';">
+          <h4>Yu-Gi-Oh!</h4>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130550&type=card" class="card-img-top" alt="Black Lotus">
-          <div class="card-body text-center">
-            <h5 class="card-title">Black Lotus</h5>
-            <p class="card-text">$9999.99</p>
-            <a href="#" class="btn btn-outline-primary">View</a>
-          </div>
+        <div class="card">
+          <img src="/textures/MTG-back.webp"
+          alt="Magic the Gathering" onerror="this.onerror=null;this.src='https://via.placeholder.com/250x350?text=Image+Not+Found';">
+          <h4>Magic: The Gathering</h4>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 TCG Card Trade. All rights reserved.</p>
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>&copy; 2025 Red Onion. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
